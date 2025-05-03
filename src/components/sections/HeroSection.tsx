@@ -1,7 +1,9 @@
+
 import React from "react";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+
 const HeroSection = () => {
   return <section className="hero-gradient min-h-screen flex items-center pt-16" id="home">
       <div className="container mx-auto px-4 md:px-6 py-16">
@@ -60,8 +62,9 @@ const HeroSection = () => {
                   <img src="/lovable-uploads/0f2904c6-0174-491f-ade0-a1cd6a871412.png" alt="Muhammad Irshad" className="w-full h-full object-cover" />
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-secondary/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10 shadow-lg z-20">
-                <p className="text-xs font-medium"></p>
+              <div className="absolute -bottom-4 -right-4 bg-secondary/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10 shadow-lg z-20 flex items-center gap-2">
+                <Award className="text-primary h-4 w-4" />
+                <p className="text-xs font-medium">2+ Years Experience</p>
               </div>
             </div>
           </div>
@@ -69,4 +72,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
