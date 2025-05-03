@@ -1,12 +1,9 @@
-
 import React from "react";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-
 const HeroSection = () => {
-  return (
-    <section className="hero-gradient min-h-screen flex items-center pt-16" id="home">
+  return <section className="hero-gradient min-h-screen flex items-center pt-16" id="home">
       <div className="container mx-auto px-4 md:px-6 py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 space-y-6 animate-fade-in">
@@ -60,22 +57,16 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-transparent blur-3xl opacity-30 rounded-full"></div>
               <div className="w-72 h-72 rounded-full border-4 border-primary/20 p-2 backdrop-blur-sm relative z-10">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/80 to-accent overflow-hidden ring-2 ring-white/10">
-                  <img 
-                    src="/lovable-uploads/0f2904c6-0174-491f-ade0-a1cd6a871412.png" 
-                    alt="Muhammad Irshad"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/0f2904c6-0174-491f-ade0-a1cd6a871412.png" alt="Muhammad Irshad" className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-secondary/80 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10 shadow-lg z-20">
-                <p className="text-xs font-medium">3+ Years Experience</p>
+                <p className="text-xs font-medium"></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
