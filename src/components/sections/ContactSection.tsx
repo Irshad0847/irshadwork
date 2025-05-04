@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Mail, Phone, Github, Linkedin, Send, Check, AlertTriangle } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Send } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -84,9 +84,9 @@ const ContactSection = () => {
     {
       id: 2,
       title: "Phone",
-      value: "+91 28921706873",
+      value: "+91 9587462145", // Updated phone number
       icon: Phone,
-      link: "tel:+9128921706873",
+      link: "tel:+919587462145", // Updated phone number in tel: link
     },
     {
       id: 3,
@@ -221,20 +221,6 @@ const ContactSection = () => {
               </Button>
             </form>
           </Form>
-        </div>
-
-        <div className="text-center mt-12 animate-fade-in">
-          <h3 className="text-2xl font-semibold mb-4">Let's Work Together</h3>
-          <p className="text-muted-foreground max-w-lg mx-auto mb-6">
-            I'm always interested in hearing about new projects and opportunities.
-            If you'd like to collaborate, please don't hesitate to get in touch.
-          </p>
-          <Button size="lg" asChild>
-            <a href="mailto:hamzairshad458@gmail.com">
-              <Mail className="mr-2 h-5 w-5" />
-              Send me a message
-            </a>
-          </Button>
         </div>
       </div>
     </section>
