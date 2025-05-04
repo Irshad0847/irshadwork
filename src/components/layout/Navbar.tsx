@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,13 +20,14 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-primary">
+        <RouterLink to="/" className="text-2xl font-bold text-primary">
           Irshad<span className="text-foreground">.dev</span>
-        </Link>
+        </RouterLink>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
+            // For hash links, we'll use regular anchor tags
             <a
               key={link.name}
               href={link.path}
