@@ -84,9 +84,9 @@ const ContactSection = () => {
     {
       id: 2,
       title: "Phone",
-      value: "+91 9587462145", // Updated phone number
+      value: "+91 8921706873", // Updated phone number
       icon: Phone,
-      link: "tel:+919587462145", // Updated phone number in tel: link
+      link: "tel:+918921706873", // Updated phone number in tel: link
     },
     {
       id: 3,
